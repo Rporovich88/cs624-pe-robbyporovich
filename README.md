@@ -1,11 +1,11 @@
-# CS624-pe-robbyporovich
-PE01
-
 1. Input
-The program inputs text and view components from the React Native framework. This is what interacts with our Expo application to define the application's interface. 
+
+The App Function uses takes data to define a Image component, then a TextInput component, then 2 Views for displaying the Core Requirment courses and the Depth of Study courses. The Styles borrow from a style sheet that contains style data for Container, Image, Text and Title. The HeadingBox and ListBox functions are called with every string for the props.
 
 2. Process
-We create a HelloWorld function to declare our view and text components. We create our view that will then contain our three text components. The view component has flex: 1 to expand the background to fill the space, and alignment parameters to center the text. There is also a background color element that is set to yellow. Then we set our text to say my name, degree, and school. We close our view and return the function that will then run in JavaScript.
 
-3. Output
-The function that is run in React Native outputs the view information for our interface, which is then rendered by the UI. The interface now has text and a yellow background.
+React Native builds a scrollable layout from `App`. The image is pulled from the assests directory. The Reusable `HeadingBox` and `ListBox` components receive strings through props and render them as text. Styles set colors, sizing, alignment, and spacing are processed with the Stylesheets data. The style of the ScrollView set the components to have spacing and fit to screen.
+
+#3. Output
+
+The output is a light-blue, scrollable interface showing a centered icon, input text field, gray section headings, and course lists. Section heading are larger font with gray background and course lists are smaller font with white background. Users can scroll to view all courses. 
