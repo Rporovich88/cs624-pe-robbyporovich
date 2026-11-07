@@ -1,13 +1,11 @@
-PE03 - Todos App
-
 1. Input
 
-This App imports the React Native components for displaying components to the interface. The user will enter a 'task' into a TextInput component to add tasks to a list of todos. Styles are taken from the Style Sheets for each separate Views, Buttons, Text and Input bar. The different JavaScript files create functions to change the displayed tasks based on the state values of the App function
+The App Function uses takes data to define a Image component, then a TextInput component, then 2 Views for displaying the Core Requirment courses and the Depth of Study courses. The Styles borrow from a style sheet that contains style data for Container, Image, Text and Title. The HeadingBox and ListBox functions are called with every string for the props.
 
 2. Process
 
-When the App component is executed, all React components are displayed. Hitting the submit button will add the task to the todos array. Selecting one of the display buttons will change the 'type' state to all, active or complete. The TaskDisplay function takes the current state information that will export a new version of the array, creating a new view for each one containing styles and buttons.
+React Native builds a scrollable layout from `App`. The image is pulled from the assests directory. The Reusable `HeadingBox` and `ListBox` components receive strings through props and render them as text. Styles set colors, sizing, alignment, and spacing are processed with the Stylesheets data. The style of the ScrollView set the components to have spacing and fit to screen.
 
-3. Output
+#3. Output
 
-We see our Heading, Input field in a scrollview with the display buttons at the bottom. Based on which display button is active, the list of tasks will appear. Our task views are displayed underneath the input field showing the buttons for marking the task as done and deleting the task.
+The output is a light-blue, scrollable interface showing a centered icon, input text field, gray section headings, and course lists. Section heading are larger font with gray background and course lists are smaller font with white background. Users can scroll to view all courses. 
